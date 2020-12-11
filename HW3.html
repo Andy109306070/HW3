@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var rand;
+		var numx;
+		function input(){
+			num = window.prompt("Please guess a number from 1 to 10!");
+			return num;
+		}
+        numx = parseInt(input());
+		rand = Math.floor((Math.random()*10)+1);
+		while(numx!=rand){
+			numx = window.prompt("Please guess again!");
+		}
+		alert("Congratulations!")
+	
+	</script>
+
+</body>
+</html>
